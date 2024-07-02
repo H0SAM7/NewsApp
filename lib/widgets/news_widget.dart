@@ -50,7 +50,7 @@ class News_widget extends StatelessWidget {
             ClipRRect(
               borderRadius: BorderRadius.circular(16),
               child: Image.network(
-                 articleModel.image ?? "https://as1.ftcdn.net/v2/jpg/04/34/72/82/1000_F_434728286_OWQQvAFoXZLdGHlObozsolNeuSxhpr84.jpg",
+                 articleModel.image ,
                 height: 300,
                 width: double.infinity,
                 fit: BoxFit.fill,

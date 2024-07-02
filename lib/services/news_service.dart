@@ -21,8 +21,11 @@ class NewsService{
   
   for (var art in articles) 
   {
-    ArticleModel artmodel=ArticleModel(image: art['urlToImage'], title: art['title'], subtitle: art['description'] , url: art["url"]); //url: art["url"]);
+   if(art['urlToImage'] != null){
+    ArticleModel artmodel=ArticleModel(image: art['urlToImage'], title: art['title'], subtitle: art['description'] , url: art["url"]); 
+    //url: art["url"]);
     aritclesModelList.add(artmodel);
+   }
   
   }
   

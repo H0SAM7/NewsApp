@@ -1,5 +1,5 @@
 class ArticleModel{
-  String? image;
+  String image;
   String title;
   String? subtitle;
   String url;
